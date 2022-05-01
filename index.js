@@ -13,7 +13,7 @@ app.get('/test', function (req, res) {
 
 
 app.post('/webhook', function(req, res) {
-    console.log(req.body);
+    console.log(req.body.ref);
     res.sendStatus(200);
     //process.kill(process.pid, 'SIGTERM');
 })
